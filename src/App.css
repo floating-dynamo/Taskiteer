@@ -1,0 +1,108 @@
+.App{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0A1929;
+    color: rgb(102, 178, 255);
+}
+
+.heading{
+    text-transform: uppercase;
+    z-index: 1;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.input-box{
+    outline: none;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-family: "EuclidCircularA";
+    border-radius: 40px;
+    box-shadow: inset 0 0 2px black;
+}
+
+.input-box::placeholder{
+    color: rgb(178, 186, 194);
+    font-weight: 500;
+}
+
+/* .input-box:focus{
+    box-shadow: 0 0 10px 1000px rgba(252, 252, 252, 0.5);
+    outline: none;
+} */
+
+.input-submit{
+    position: absolute;
+    right: 10px;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    background-color: #0A1929;
+    text-transform: uppercase;
+    font-family: "EuclidCircularA";
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.input-submit:hover{
+    background-color: #0a1929c2;
+}
+
+.input-submit:active{
+    transform: scale(0.8);
+}
+
+.todos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo{
+    display: flex;
+    background-color: rgba(102, 179, 255, 0.553);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0.3vw;
+    margin: 20px;
+    width: 20rem;
+    min-height: 3rem;
+    align-items: center;
+    box-shadow: inset 0 0 12px rgba(102, 179, 255, 0.5);  
+}
+
+.todo-title{
+    flex: 1;
+}
+
+.todo-icons{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.todo input{
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid #0A1929;
+}
